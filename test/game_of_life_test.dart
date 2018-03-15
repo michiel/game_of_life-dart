@@ -3,14 +3,14 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    Awesome awesome;
+    TreeNode root;
 
     setUp(() {
-      awesome = new Awesome();
+      root = TreeNode.create();
     });
 
     test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+      expect(root.ne, new isInstanceOf<TreeNode>());
     });
   });
 }
